@@ -1,0 +1,85 @@
+.gmisc_table40 {
+    width:40%;
+    border: 0;
+    outline: 0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+.gmisc_table60 {
+    width:60%;
+    border: 0;
+    outline: 0;
+        margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+.gmisc_table80 {
+    width:80%;
+    border: 0;
+    outline: 0;
+        margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+.gmisc_table100 {
+    width:100%;
+    border: 0;
+    outline: 0;
+        margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+.gmisc_table {
+    width:100%;
+    border: 0;
+    outline: 0;
+        margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+.panel-body {
+  background-color: rgb(245,245,245);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.panel-default>.panel-heading {
+  background-color: rgb(230,230,230);
+}
+
+.panel-heading a:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+
+.panel-heading a.collapsed:after {
+    /* symbol for "collapsed" panels */
+        content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+
+}
+
+.handsontable {
+  margin-bottom: 10px;
+}
+
+.handsontable.listbox {
+  bottom: 5em;
+}
+
+.nav {
+  margin-bottom: 10px;
+}
+
+.tab-pane {
+  margin-top: 20px;
+}
