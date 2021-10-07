@@ -1,18 +1,32 @@
 # IMPACC_Proteomics_Rshiny
-Rshiny code for looking at the IMPACC data (https://www.impaccstudy.org/)
 
-This app does the following:
-1. Load in clinical data
-2. Load in proteomics data (DDA, DIA, targeted)
+Rshiny code for looking at the IMPACC data (https://www.impaccstudy.org/).
 
-Once data is loaded in user will first have a quick overview on some simple statistics related to the three different data files.
+App includes the following key components:
 
-Next, user can have a look at clinical data including grouping for disease, disease progression, age, sex, enrollment site and ethnicity.
+## Load data
 
-User can use different clustering methods, including PCA, t-SNE, UMAP and PVCA.
+Will load in the clinical data, DDA, DIA and targeted proteomics data. User can select some filters, normalisation and cut-off filter.
 
-User can do some initial longitudinal analysis, using ANOVA or within subject ANOVA. More in depth results can be seen for specifiek proteins.
+User will be given some simple statistics such as total number of proteins, and comparison of cut-off filters between the three acquisition methods.
 
-To assess differences between specific groups, user can specify two groups and run t-tests, following by a volcanoplot. Results can be enriched using STRING-db.
+## Clinical data
 
-Heatmap can be generated. It will automatically take the significant proteins from the longitdinal analysis, but user can specify whatever proteins he/she might be interested in. 
+Will give user info on the clinical data in specific. Includes standard tabular patients inclusion, clinical grouping, age distribution, sex, enrollment sites and ethnicity.
+
+## Clustering
+
+User can do some dimensionality reduction including PCA, t-SNE and UMAP. User can also generate a PVCA plot to assess effects of clinical parameters on distribution in a PCA.
+
+## Longitudinal
+
+Will run ANOVA, within-subject ANOVA or non-parametric ANOVA between the visit numbers. Will give some info on sample size, as well as plotting the trajectories of proteins across the visits. User can run enrichment analysis too.
+
+## Volcanoplotter
+
+This project includes many clinical variables. We developed a simple script that will run a t-test between any clinical variable of interest and plot it in a volcanoplot. Again, user can run some enrichment analysis on significant proteins.
+
+# Heatmap
+
+User can generate a heatmap of specified proteins, as well as specified clinical factors for annotation.
+
