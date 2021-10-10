@@ -26,7 +26,7 @@ Will run ANOVA, within-subject ANOVA or non-parametric ANOVA between the visit n
 
 This project includes many clinical variables. We developed a simple script that will run a t-test between any clinical variable of interest and plot it in a volcanoplot. Again, user can run some enrichment analysis on significant proteins.
 
-# Heatmap
+## Heatmap
 
 User can generate a heatmap of specified proteins, as well as specified clinical factors for annotation.
 
